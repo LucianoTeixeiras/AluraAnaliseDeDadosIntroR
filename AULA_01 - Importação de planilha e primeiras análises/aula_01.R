@@ -1,3 +1,4 @@
+#AULA_01 - Importação de planilha e primeiras análises
 #Importar dataset manualmente
 
 rm(list = ls())
