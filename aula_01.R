@@ -1,5 +1,7 @@
 #Importar dataset manualmente
 
+rm(list = ls())
+
 library(readxl)
 aulas <- read_excel("projeto/aulas.xlsx")
 View(aulas)
