@@ -37,6 +37,8 @@ sort(table(aulas$section_id))
 
 sort(table(aulas$course_id))
 
-auxiliar<-count(aulas, vars = "course_id")
+library(plyr)
+
+auxiliar <- count(aulas, vars = "course_id")
 
 write.csv(auxiliar, "popularidade.csv")

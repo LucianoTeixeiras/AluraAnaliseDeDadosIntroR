@@ -6,6 +6,10 @@ View(sumario_estatistico)
 
 View(popularidade)
 
+library(readr)
+popularidade <- read_csv("projeto/popularidade.csv")
+View(popularidade)
+
 popularidade_duracao<-merge(sumario_estatistico, popularidade, by = 'curso')
 
 sumario_estatistico<-rename(sumario_estatistico, replace = c('Group.1' = 'curso', 'x' = 'dias'))
